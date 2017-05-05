@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Соціальне опитування</title>
+</head>
+<body>
+    <h1>Соціальне опитування на тему телебачення</h1>
+        Ваша стать:
+        <form>
+        <input type="radio" name="gender" value="Чоловік" checked> Чоловік<br>
+        <input type="radio" name="gender" value="Жінка"> Жінка<br>
+        <input type="radio" name="gender" value="Інше"> Інше
+        </form>
+        <br>
+        Як часто ви дивитесь фільми?
+        <br>
+        <textarea name="message" rows="2" cols="30">
+        </textarea>
+        <br>
+        Які фільми вам більш за все подобаються?
+        <br>
+        <select name="Улюблені фільми?">
+            <option value="Комедії">Комедії</option>
+            <option value="Драми">Драми</option>
+            <option value="Фантастика">Фантастика</option>
+            <option value="Пригодницькі">Пригодницькі</option>
+            <option value="Байдуже, головне зі змістом">Байдуже, головне зі змістом</option>
+        </select>
+        <br>
+        <br>
+        <form method="POST" action="https://formspree.io/treble112@ukr.net">
+        <label>Ім'я:
+        <input type="text" name="Ім'я">
+        </label>
+        <label>Прізвище:
+        <input type="text" name="Прізвище">
+        </label>
+        <label>Ваш email
+        <input type="email" name="Ваш email" required>
+        </label>
+        <br>
+        <input type="submit" value="Підтвердити">
+        <input type="reset" value="Скинути">
+        </form>
+</body>
+</html>
